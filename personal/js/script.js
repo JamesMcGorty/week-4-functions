@@ -19,3 +19,8 @@ function getAge(birthDate)
 {
 	var dateToday = new Date();			// get the current date
 	var diff = dateToday - birthDate;	// diff is in milliseconds
+	
+	var milliSecondsPerYear = 1000 * 60 * 60 * 24 * 365.25;
+	
+	return Math.floor(diff / milliSecondsPerYear);
+}
