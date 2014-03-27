@@ -11,3 +11,6 @@ var receipt = prompt("Would you like a reciept?", "No");
 
 // Annoymous function to calcualte the number of bills 
 var calcNumBills = function() { return Math.floor(money / bill); };
+
+// Sequencial Processing
+var bGood = ValidateParameters(money, bill, receipt);
