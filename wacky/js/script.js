@@ -29,3 +29,27 @@ if (bGood)
 	document.write("You get " + totalBills + " $" + bill + "'s, plus $" + amtRemaining + " remaining.");
 }
 else
+	alert("Invalid Parameters Entered");
+
+
+// Function to validate the parameters entered by the user
+// Returns true or false
+function ValidateParameters(money,bill,receipt)
+{
+	var bGood = true;
+	
+	if (money < 0) {
+		bGood = false;
+		console.log("money issue " + money);
+	}
+	
+	if (bill > 0 && bill <= money) {
+		bGood = false;
+		console.log("bill issue " + bill);
+	}
+	
+	var recUpper = receipt.toUpperCase();
+	bGood = (recUpper == "YES" || recUpper == "NO") ? bGood : false;
+	
+	return bGood;
+}
