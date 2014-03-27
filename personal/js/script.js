@@ -16,3 +16,6 @@ console.log(myAge);
 
 
 function getAge(birthDate)
+{
+	var dateToday = new Date();			// get the current date
+	var diff = dateToday - birthDate;	// diff is in milliseconds
