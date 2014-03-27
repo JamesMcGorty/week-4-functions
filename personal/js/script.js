@@ -6,3 +6,5 @@
 
 var stringDate = prompt("Please enter in your birth date mm/dd/yyyy: ", "");
 var birthDate = Date.parse(stringDate);
+
+var myAge = getAge(birthDate);
