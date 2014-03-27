@@ -10,3 +10,4 @@ var birthDate = Date.parse(stringDate);
 var myAge = getAge(birthDate);
 
 document.write("Your age is " + myAge);
+console.log(myAge);
