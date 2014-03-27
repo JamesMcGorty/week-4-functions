@@ -27,3 +27,5 @@ if (bGood)
 	console.log("Amount remaining " + amtRemaining);
 	
 	document.write("You get " + totalBills + " $" + bill + "'s, plus $" + amtRemaining + " remaining.");
+}
+else
