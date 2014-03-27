@@ -17,3 +17,13 @@ var bGood = ValidateParameters(money, bill, receipt);
 
 if (bGood)
 {
+	var totalBills = calcNumBills(money, bill);
+	console.log("Total Bills in requested bill " + totalBills);
+
+	var amtBills = totalBills * bill;
+	console.log("Total Amount in the bill requested $" + amtBills);
+	
+	var amtRemaining = money - amtBills;
+	console.log("Amount remaining " + amtRemaining);
+	
+	document.write("You get " + totalBills + " $" + bill + "'s, plus $" + amtRemaining + " remaining.");
