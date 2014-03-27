@@ -14,3 +14,6 @@ var calcNumBills = function() { return Math.floor(money / bill); };
 
 // Sequencial Processing
 var bGood = ValidateParameters(money, bill, receipt);
+
+if (bGood)
+{
