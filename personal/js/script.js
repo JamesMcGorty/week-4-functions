@@ -11,3 +11,8 @@ var myAge = getAge(birthDate);
 
 document.write("Your age is " + myAge);
 console.log(myAge);
+
+
+
+
+function getAge(birthDate)
